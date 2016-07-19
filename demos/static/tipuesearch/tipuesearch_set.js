@@ -1,11 +1,13 @@
 
 /*
-Tipue Search 5.0
-Copyright (c) 2015 Tipue
+Tipue Search 6.0
+Copyright (c) 2015-2016 Tipue
 Tipue Search is released under the MIT License
 http://www.tipue.com/search
 */
 
+// Start timer for search execution time. The value will be used in tipuesearch.js .
+var startTime = new Date().getTime();
 
 /*
 Stop words
@@ -49,7 +51,7 @@ var tipuesearch_string_2 = 'Showing results for';
 var tipuesearch_string_3 = 'Search instead for';
 var tipuesearch_string_4 = '1 result';
 var tipuesearch_string_5 = 'results';
-var tipuesearch_string_6 = 'Prev';
+var tipuesearch_string_6 = 'Previous';
 var tipuesearch_string_7 = 'Next';
 var tipuesearch_string_8 = 'Nothing found';
 var tipuesearch_string_9 = 'Common words are largely ignored';
@@ -57,3 +59,8 @@ var tipuesearch_string_10 = 'Search too short';
 var tipuesearch_string_11 = 'Should be one character or more';
 var tipuesearch_string_12 = 'Should be';
 var tipuesearch_string_13 = 'characters or more';
+var tipuesearch_string_14 = '&lt;&lt;';
+var tipuesearch_string_15 = '&gt;&gt;';
+var tipuesearch_string_16 = 'page(s) of results.';
+var tipuesearch_string_17 = 'Score:';
+var tipuesearch_string_18 = 'Search took $1 seconds.';
