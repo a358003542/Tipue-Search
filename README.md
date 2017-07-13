@@ -70,6 +70,8 @@ There are several projects which integrate Tipue Search with various static site
 <https://github.com/search?utf8=%E2%9C%93&q=tipue>
 <https://www.google.ca/search?q=tipue+jekyll>
 
+To highlight search terms and automatically scroll down to the first search result in the content page linked from the search results, see the [highlightJS](https://github.com/michael-milette/highlightjs/) project.
+
 Future
 ------
 
