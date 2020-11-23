@@ -41,7 +41,7 @@ See README for details.
           }, options);
 
           set.input = this[0].id;
-          
+
           return this.each(function() {
 
                var tipuesearch_in = {
@@ -195,18 +195,6 @@ See README for details.
                                              d_w[i] = d_w[i].replace(d_w[i], tipuesearch_replace.words[f].replace_with);
                                              show_replace = true;
                                         }
-                                   }
-                              }
-                         }
-
-                         // Check each term against the list of STEM words.
-                         for (var i = 0; i < d_w.length; i++)
-                         {
-                              for (var f = 0; f < tipuesearch_stem.words.length; f++)
-                              {
-                                   if (d_w[i] == tipuesearch_stem.words[f].word)
-                                   {
-                                        d_w[i] = d_w[i] + ' ' + tipuesearch_stem.words[f].stem;
                                    }
                               }
                          }
@@ -576,8 +564,8 @@ if(!RegExp.escape){
 }
 // Retrieves the value of a the specified key from the parameters in the URL.
 function getUrlParam(key){
-    var value = new RegExp(key + "=([^&]*)", "i").exec(window.location.search); 
-    return value && unescape(value[1]) || ""; 
+    var value = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+    return value && unescape(value[1]) || "";
 }
 
 // Get the number of pages to display for the page navigation at the bottom of the page.
@@ -627,5 +615,5 @@ $(document).ready(function() {
     $.fn.slideFadeToggle = function(easing, callback) {
       return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
     };
-    
+
 });
